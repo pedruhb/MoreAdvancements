@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:zombie_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.golden_hoe.title"
+    },
+    "description": {
+      "translate": "advancements.golden_hoe.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "golden_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:golden_hoe"
+          ],
+          "durability": {
+            "min": 32,
+            "max": 16000
+          }
+        }
+      }
+    }
+  },
+  "parent": "moreadvancements:eat"
+}

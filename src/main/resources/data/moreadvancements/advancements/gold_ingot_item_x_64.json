@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "title": {
+      "translate": "advancements.gold_ingot_item_x_64.title"
+    },
+    "description": {
+      "translate": "advancements.gold_ingot_item_x_64.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gold_ingot_item_x_64": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ],
+            "count": {
+              "min": 64,
+              "max": 21346182374132310
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5000
+  },
+  "parent": "moreadvancements:iron_ingot_item_x_64"
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:beacon"
+    },
+    "title": {
+      "translate": "advancements.beacon_x_9.title"
+    },
+    "description": {
+      "translate": "advancements.beacon_x_9.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beacon_x_9": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:beacon"
+            ],
+            "count": {
+              "min": 9,
+              "max": 1.231231231212123e+21
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50000
+  },
+  "parent": "moreadvancements:indicator"
+}

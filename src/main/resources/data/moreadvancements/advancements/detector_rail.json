@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:detector_rail"
+    },
+    "title": {
+      "translate": "advancements.detector_rail.title"
+    },
+    "description": {
+      "translate": "advancements.detector_rail.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "detector_rail": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:detector_rail"
+            ],
+            "count": {
+              "min": 1,
+              "max": 12312312312312312000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "moreadvancements:rail"
+}

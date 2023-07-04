@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:coal"
+    },
+    "title": {
+      "translate": "advancements.nice_coal.title"
+    },
+    "description": {
+      "translate": "advancements.nice_coal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nice_coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:coal"
+            ],
+            "count": {
+              "min": 69,
+              "max": 213123123123123
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "moreadvancements:nice_flesh"
+}

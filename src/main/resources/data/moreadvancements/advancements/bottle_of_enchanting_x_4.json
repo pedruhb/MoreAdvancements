@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:experience_bottle"
+    },
+    "title": {
+      "translate": "advancements.bottle_of_enchanting_x_4.title"
+    },
+    "description": {
+      "translate": "advancements.bottle_of_enchanting_x_4.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bottle_of_enchanting_x_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:experience_bottle"
+            ],
+            "count": {
+              "min": 4,
+              "max": 12312312312312312000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "moreadvancements:bottle_of_enchanting_x_2"
+}

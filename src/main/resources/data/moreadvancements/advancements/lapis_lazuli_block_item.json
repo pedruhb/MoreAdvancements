@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lapis_block"
+    },
+    "title": {
+      "translate": "advancements.lapis_lazuli_block_item.title"
+    },
+    "description": {
+      "translate": "advancements.lapis_lazuli_block_item.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lapis_lazuli_block_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:lapis_block"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000000000000000000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10000
+  },
+  "parent": "moreadvancements:dirt_item"
+}

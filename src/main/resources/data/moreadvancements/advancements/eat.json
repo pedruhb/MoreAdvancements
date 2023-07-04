@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:creeper_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.eat.title"
+    },
+    "description": {
+      "translate": "advancements.eat.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:rotten_flesh"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "moreadvancements:indicator"
+}

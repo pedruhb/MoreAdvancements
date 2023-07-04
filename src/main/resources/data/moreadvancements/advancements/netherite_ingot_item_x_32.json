@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "title": {
+      "translate": "advancements.netherite_ingot_item_x_32.title"
+    },
+    "description": {
+      "translate": "advancements.netherite_ingot_item_x_32.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "netherite_ingot_item_x_32": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_ingot"
+            ],
+            "count": {
+              "min": 32,
+              "max": 21346182374132310
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "moreadvancements:netherite_ingot_item_x_10"
+}

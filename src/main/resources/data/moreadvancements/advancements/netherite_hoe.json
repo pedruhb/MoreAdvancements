@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:slime_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.netherite_hoe.title"
+    },
+    "description": {
+      "translate": "advancements.netherite_hoe.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "netherite_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:netherite_hoe"
+          ],
+          "durability": {
+            "min": 2031,
+            "max": 1600000
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5000
+  },
+  "parent": "moreadvancements:golden_hoe"
+}

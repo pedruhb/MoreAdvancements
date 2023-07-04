@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:ghast_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.wooden_hoe.title"
+    },
+    "description": {
+      "translate": "advancements.wooden_hoe.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wooden_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:wooden_hoe"
+          ],
+          "durability": {
+            "min": 59,
+            "max": 16000
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "moreadvancements:netherite_hoe"
+}

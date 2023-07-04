@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt_minecart"
+    },
+    "title": {
+      "translate": "advancements.minecart_tnt.title"
+    },
+    "description": {
+      "translate": "advancements.minecart_tnt.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "minecart_tnt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tnt_minecart"
+            ],
+            "count": {
+              "min": 1,
+              "max": 2123123123123123200
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "moreadvancements:minecart"
+}

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:activator_rail"
+    },
+    "title": {
+      "translate": "advancements.activator_rail.title"
+    },
+    "description": {
+      "translate": "advancements.activator_rail.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "activator_rail": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:activator_rail"
+            ],
+            "count": {
+              "min": 1,
+              "max": 123123123123123
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 231
+  },
+  "parent": "moreadvancements:rail"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:spider_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.badlands.title"
+    },
+    "description": {
+      "translate": "advancements.badlands.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "badlands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "eroded_badlands"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "moreadvancements:dark_oak_forest"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_block"
+    },
+    "title": {
+      "translate": "advancements.nice_netherite_block.title"
+    },
+    "description": {
+      "translate": "advancements.nice_netherite_block.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nice_netherite_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_block"
+            ],
+            "count": {
+              "min": 69,
+              "max": 213123123123123
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "moreadvancements:nice_netherite"
+}
