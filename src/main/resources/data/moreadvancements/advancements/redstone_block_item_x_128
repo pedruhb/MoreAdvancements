@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:redstone_block"
+    },
+    "title": {
+      "translate": "advancements.redstone_block_item_x_128.title"
+    },
+    "description": {
+      "translate": "advancements.redstone_block_item_x_128.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "redstone_block_item_x_64": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:redstone_block"
+            ],
+            "count": {
+              "min": 128,
+              "max": 1623812736182231
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10000
+  },
+  "parent": "moreadvancements:redstone_block_item_x_64"
+}
